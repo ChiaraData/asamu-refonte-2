@@ -1,0 +1,7 @@
+.DS_Store
+.env
+storage/admin-account.json
+storage/google-sheets.json
+storage/admin-audit.json
+storage/backups/
+*.zip
