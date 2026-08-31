@@ -42,7 +42,7 @@ $v2ScriptVersion = (string) filemtime(__DIR__ . '/../assets/js/v2.js');
 <footer class="v2-footer">
     <div class="container v2-footer-top">
         <div class="v2-footer-intro">
-            <a class="v2-footer-brand" href="index.php">
+            <a class="v2-footer-brand" href="./">
                 <img src="assets/img/logo-asamu-v2.png" alt="Logo AS amU">
                 <span>AS amU</span>
             </a>
@@ -50,17 +50,17 @@ $v2ScriptVersion = (string) filemtime(__DIR__ . '/../assets/js/v2.js');
         </div>
         <div class="v2-footer-column v2-footer-quick-links">
             <h2>Accès rapides</h2>
-            <a href="association.php">Organisation de l’association</a>
+            <a href="association">Organisation de l’association</a>
             <a href="<?= e($site['helloasso_url']) ?>" target="_blank" rel="noopener">Adhérer via HelloAsso</a>
-            <a href="sections.php">Trouver sa section</a>
-            <a href="calendrier.php">Calendrier des compétitions</a>
-            <a href="coachs.php">Coachs <?= e($site['season']) ?></a>
-            <a href="documents.php">Documents utiles</a>
+            <a href="sections">Trouver sa section</a>
+            <a href="calendrier">Calendrier des compétitions</a>
+            <a href="coachs">Coachs <?= e($site['season']) ?></a>
+            <a href="documents">Documents utiles</a>
         </div>
         <div class="v2-footer-column">
             <h2>Pour commencer</h2>
-            <a href="boussole.php">La boussole du sport</a>
-            <a href="adhesion.php">Adhérer via HelloAsso</a>
+            <a href="boussole">La boussole du sport</a>
+            <a href="adhesion">Adhérer via HelloAsso</a>
         </div>
         <div class="v2-footer-column">
             <h2>Nous joindre</h2>
@@ -72,8 +72,8 @@ $v2ScriptVersion = (string) filemtime(__DIR__ . '/../assets/js/v2.js');
     <div class="container v2-footer-bottom">
         <small>© <?= date('Y') ?> <?= e($site['full_name']) ?>.</small>
         <nav class="v2-footer-legal" aria-label="Informations légales">
-            <a href="mentions-legales.php">Mentions légales</a>
-            <a href="confidentialite.php">Confidentialité</a>
+            <a href="mentions-legales">Mentions légales</a>
+            <a href="confidentialite">Confidentialité</a>
             <a href="<?= e($site['instagram_url']) ?>" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
         </nav>
     </div>

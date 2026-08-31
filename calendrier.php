@@ -60,7 +60,7 @@ $formatFrenchDate = static function (string $date) use ($frenchMonths): string {
         <h1>Calendrier des compétitions.</h1>
         <p class="lead">Un espace unique pour voir les compétitions à venir, les lieux, les niveaux et les informations de départ.</p>
         <div class="hero-actions">
-            <a class="btn btn-primary" href="competitions.php">Préparer mon départ</a>
+            <a class="btn btn-primary" href="competitions">Préparer mon départ</a>
             <a class="btn btn-secondary" href="mailto:<?= e($site['competition_email']) ?>">Signaler une compétition</a>
         </div>
     </div>
@@ -73,7 +73,7 @@ $formatFrenchDate = static function (string $date) use ($frenchMonths): string {
             <h2>Le calendrier en un coup d’œil</h2>
             <p>Filtre par sport, niveau ou statut, puis sélectionne une date pour retrouver les informations utiles.</p>
         </div>
-        <a class="text-link" href="competitions.php#documents">Documents compétition →</a>
+        <a class="text-link" href="competitions#documents">Documents compétition →</a>
     </div>
 
     <div class="competition-calendar-shell" data-competition-calendar data-season-start="<?= e($calendarMonths[0]['value']) ?>" data-season-end="<?= e($calendarMonths[count($calendarMonths) - 1]['value']) ?>">

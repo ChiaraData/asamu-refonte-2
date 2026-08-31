@@ -9,8 +9,8 @@ require_once __DIR__ . '/includes/header.php';
         <h1>Les commissions.</h1>
         <p class="lead">Les commissions permettent de répartir le travail : sport, finances, communication, vie associative et suivi des projets.</p>
         <div class="hero-actions">
-            <a class="btn btn-primary" href="contact.php">Contacter l’AS amU</a>
-            <a class="btn btn-secondary" href="association.php">Organisation</a>
+            <a class="btn btn-primary" href="contact">Contacter l’AS amU</a>
+            <a class="btn btn-secondary" href="association">Organisation</a>
         </div>
     </div>
 </section>

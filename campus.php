@@ -37,7 +37,7 @@ require_once __DIR__ . '/includes/header.php';
             <p class="eyebrow">Repères GPS</p>
             <h2>Trouve ton lieu de pratique.</h2>
         </div>
-        <a class="text-link" href="sections-appartenance.php">Je ne connais pas ma section →</a>
+        <a class="text-link" href="sections-appartenance">Je ne connais pas ma section →</a>
     </div>
 
     <div class="campus-map-layout" data-campus-map>
@@ -98,7 +98,7 @@ require_once __DIR__ . '/includes/header.php';
                     <h3>Afficher la carte Google Maps ?</h3>
                     <p>La carte est bloquée par défaut pour protéger ta vie privée. En l’affichant, ton navigateur se connectera à Google.</p>
                     <button class="btn btn-primary" type="button" data-campus-map-load>Afficher la carte Google Maps</button>
-                    <a href="confidentialite.php">En savoir plus sur la confidentialité</a>
+                    <a href="confidentialite">En savoir plus sur la confidentialité</a>
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@ require_once __DIR__ . '/includes/header.php';
                     <h2><?= e($campusLabel) ?></h2>
                     <p><?= count($campusSections) ?> section<?= count($campusSections) > 1 ? 's' : '' ?> AS amU à découvrir.</p>
                 </div>
-                <a class="text-link" href="sections.php#section-list">Voir toutes les sections →</a>
+                <a class="text-link" href="sections#section-list">Voir toutes les sections →</a>
             </div>
 
             <div class="campus-section-grid">

@@ -12,29 +12,29 @@ $v2StylesheetVersion = (string) filemtime(__DIR__ . '/../assets/css/style-v2.css
 
 $v2MenuGroups = [
     'Découvrir' => [
-        ['label' => 'Accueil', 'url' => 'index.php'],
-        ['label' => 'Actualités', 'url' => 'actualites.php'],
-        ['label' => 'La boussole du sport', 'url' => 'boussole.php'],
-        ['label' => 'Photothèque', 'url' => 'phototheque.php'],
+        ['label' => 'Accueil', 'url' => './'],
+        ['label' => 'Actualités', 'url' => 'actualites'],
+        ['label' => 'La boussole du sport', 'url' => 'boussole'],
+        ['label' => 'Photothèque', 'url' => 'phototheque'],
     ],
     'Pratiquer' => [
-        ['label' => 'Toutes les sections', 'url' => 'sections.php'],
-        ['label' => 'Identifier ma section', 'url' => 'sections-appartenance.php'],
-        ['label' => 'Carte des campus', 'url' => 'campus.php'],
+        ['label' => 'Toutes les sections', 'url' => 'sections'],
+        ['label' => 'Identifier ma section', 'url' => 'sections-appartenance'],
+        ['label' => 'Carte des campus', 'url' => 'campus'],
     ],
     'Participer' => [
-        ['label' => 'Adhésion', 'url' => 'adhesion.php'],
-        ['label' => 'Compétitions', 'url' => 'competitions.php'],
-        ['label' => 'Calendrier', 'url' => 'calendrier.php'],
-        ['label' => 'Palmarès', 'url' => 'palmares.php'],
-        ['label' => 'Coachs', 'url' => 'coachs.php'],
+        ['label' => 'Adhésion', 'url' => 'adhesion'],
+        ['label' => 'Compétitions', 'url' => 'competitions'],
+        ['label' => 'Calendrier', 'url' => 'calendrier'],
+        ['label' => 'Palmarès', 'url' => 'palmares'],
+        ['label' => 'Coachs', 'url' => 'coachs'],
     ],
     'L’association' => [
-        ['label' => 'Organisation', 'url' => 'association.php'],
-        ['label' => 'Commissions', 'url' => 'commissions.php'],
-        ['label' => 'Documents', 'url' => 'documents.php'],
-        ['label' => 'Statuts et charte', 'url' => 'statuts.php'],
-        ['label' => 'Contact', 'url' => 'contact.php'],
+        ['label' => 'Organisation', 'url' => 'association'],
+        ['label' => 'Commissions', 'url' => 'commissions'],
+        ['label' => 'Documents', 'url' => 'documents'],
+        ['label' => 'Statuts et charte', 'url' => 'statuts'],
+        ['label' => 'Contact', 'url' => 'contact'],
     ],
 ];
 ?>
@@ -68,7 +68,7 @@ $v2MenuGroups = [
 
 <header class="v2-header">
     <div class="container v2-navbar">
-        <a class="v2-brand" href="index.php" aria-label="Retour à l’accueil AS amU">
+        <a class="v2-brand" href="./" aria-label="Retour à l’accueil AS amU">
             <img src="assets/img/logo-asamu-v2.png" alt="Logo AS amU">
             <span>
                 <strong>AS amU</strong>
@@ -77,7 +77,7 @@ $v2MenuGroups = [
         </a>
 
         <div class="v2-header-actions">
-            <a class="v2-compass-link" href="boussole.php">La boussole</a>
+            <a class="v2-compass-link" href="boussole">La boussole</a>
             <a class="v2-join-link" href="<?= e($site['helloasso_url']) ?>" target="_blank" rel="noopener">Adhérer <span aria-hidden="true">↗</span></a>
             <button class="v2-join-link" type="button" title="Boutique bientôt disponible">Boutique <span aria-hidden="true">↗</span></button>
             <button class="v2-menu-toggle" type="button" data-v2-menu-toggle aria-expanded="false" aria-controls="v2-menu-panel">

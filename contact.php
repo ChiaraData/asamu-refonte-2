@@ -57,7 +57,7 @@ require_once __DIR__ . '/includes/header.php';
 </section>
 
 <section class="section container contact-grid">
-    <form class="contact-form" method="post" action="contact.php" novalidate>
+    <form class="contact-form" method="post" action="contact" novalidate>
         <h2>Envoyer un message</h2>
 
         <?php if ($success): ?>
@@ -96,7 +96,7 @@ require_once __DIR__ . '/includes/header.php';
         <input class="hp" id="website" name="website" type="text" tabindex="-1" autocomplete="off">
 
         <button class="btn btn-primary" type="submit">Envoyer</button>
-        <p class="form-privacy-note">Tous les champs visibles sont nécessaires pour répondre à ta demande. Les informations sont utilisées uniquement par l’AS amU et, si besoin, par la section concernée. <a href="confidentialite.php">En savoir plus sur tes données et tes droits</a>.</p>
+        <p class="form-privacy-note">Tous les champs visibles sont nécessaires pour répondre à ta demande. Les informations sont utilisées uniquement par l’AS amU et, si besoin, par la section concernée. <a href="confidentialite">En savoir plus sur tes données et tes droits</a>.</p>
     </form>
 
     <aside class="contact-card">

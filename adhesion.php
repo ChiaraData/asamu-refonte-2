@@ -10,7 +10,7 @@ require_once __DIR__ . '/includes/header.php';
         <p class="lead">L’adhésion ne passe plus par le portail AS amU. Le paiement se fait sur HelloAsso, puis la licence FFSU se complète sur MySportU pour les compétitions.</p>
         <div class="hero-actions">
             <a class="btn btn-primary" href="<?= e($site['helloasso_url']) ?>" target="_blank" rel="noopener">Ouvrir HelloAsso</a>
-            <a class="btn btn-secondary" href="sections-appartenance.php">Je ne connais pas ma section</a>
+            <a class="btn btn-secondary" href="sections-appartenance">Je ne connais pas ma section</a>
         </div>
     </div>
 </section>

@@ -10,8 +10,8 @@ $governanceDocs = array_filter($associationDocuments, fn($doc) => in_array($doc[
         <h1>Statuts, règlement intérieur et charte.</h1>
         <p class="lead">Un espace dédié aux règles de fonctionnement, engagements et documents officiels de l’association.</p>
         <div class="hero-actions">
-            <a class="btn btn-primary" href="documents.php">Tous les documents</a>
-            <a class="btn btn-secondary" href="commissions.php">Voir les commissions</a>
+            <a class="btn btn-primary" href="documents">Tous les documents</a>
+            <a class="btn btn-secondary" href="commissions">Voir les commissions</a>
         </div>
     </div>
 </section>

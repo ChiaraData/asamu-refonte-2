@@ -38,7 +38,7 @@ function news_date_label(string $date): string
     <article class="section container news-article-content">
         <?php if (!empty($article['image'])): ?><img src="<?= e((string) $article['image']) ?>" alt="<?= e((string) ($article['image_alt'] ?? $article['title'] ?? '')) ?>"><?php endif; ?>
         <div class="news-rich-text"><?= rich_text_render((string) ($article['body'] ?? '')) ?></div>
-        <a class="btn btn-secondary" href="actualites.php">← Toutes les actualités</a>
+        <a class="btn btn-secondary" href="actualites">← Toutes les actualités</a>
     </article>
 <?php else: ?>
     <section class="page-hero compact">
@@ -58,7 +58,7 @@ function news_date_label(string $date): string
                             <p><?= e((string) ($post['category'] ?? 'Actualité')) ?> · <?= e(news_date_label((string) ($post['published_at'] ?? ''))) ?></p>
                             <h2><?= e((string) ($post['title'] ?? 'Actualité AS amU')) ?></h2>
                             <?php if (!empty($post['excerpt'])): ?><p class="news-card-excerpt"><?= e((string) $post['excerpt']) ?></p><?php endif; ?>
-                            <a class="text-link" href="actualites.php?article=<?= urlencode((string) ($post['slug'] ?? '')) ?>">Lire l’actualité →</a>
+                            <a class="text-link" href="actualites?article=<?= urlencode((string) ($post['slug'] ?? '')) ?>">Lire l’actualité →</a>
                         </div>
                     </article>
                 <?php endforeach; ?>

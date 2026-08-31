@@ -15,7 +15,7 @@ if (!$section) {
             <h1>Section introuvable.</h1>
             <p class="lead">La fiche demandée n’existe pas ou le lien est incorrect.</p>
             <div class="hero-actions">
-                <a class="btn btn-primary" href="sections.php">Retour aux sections</a>
+                <a class="btn btn-primary" href="sections">Retour aux sections</a>
             </div>
         </div>
     </section>
@@ -24,7 +24,7 @@ if (!$section) {
 
 $pageTitle = $section['name'];
 $pageDescription = 'Fiche section ' . $section['name'] . ' : adresse, bureau, permanences, adhérents, licenciés, compétitions et événements.';
-$pageCanonical = 'section.php?slug=' . rawurlencode($slug);
+$pageCanonical = 'section?slug=' . rawurlencode($slug);
 require_once __DIR__ . '/includes/header.php';
 ?>
 <section class="page-hero section-hero compact">
@@ -124,7 +124,7 @@ require_once __DIR__ . '/includes/header.php';
                 <h2>Les rendez-vous de la section</h2>
                 <p>Retrouve les temps forts annoncés par la section. Contacte-la pour confirmer les dates et les inscriptions.</p>
             </div>
-            <a class="text-link" href="calendrier.php">Voir le calendrier général →</a>
+            <a class="text-link" href="calendrier">Voir le calendrier général →</a>
         </div>
 
         <div class="section-event-grid">
@@ -144,8 +144,8 @@ require_once __DIR__ . '/includes/header.php';
         <strong>Informations complémentaires :</strong> <?= e($section['notes']) ?>
     </div>
     <div class="section-nav-actions">
-        <a class="btn btn-secondary" href="sections.php">Toutes les sections</a>
-        <a class="btn btn-primary" href="adhesion.php">Comprendre l’adhésion</a>
+        <a class="btn btn-secondary" href="sections">Toutes les sections</a>
+        <a class="btn btn-primary" href="adhesion">Comprendre l’adhésion</a>
     </div>
 </section>
 <?php require_once __DIR__ . '/includes/footer.php'; ?>

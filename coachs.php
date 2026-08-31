@@ -10,7 +10,7 @@ require_once __DIR__ . '/includes/header.php';
         <h1>Les coachs sportifs <?= e($site['season']) ?>.</h1>
         <p class="lead"><?= e($coachInfo['intro']) ?></p>
         <div class="hero-actions">
-            <a class="btn btn-primary" href="calendrier.php">Voir le calendrier</a>
+            <a class="btn btn-primary" href="calendrier">Voir le calendrier</a>
             <a class="btn btn-secondary" href="#contacts-coachs">Voir les coordonnées des coachs</a>
         </div>
     </div>
@@ -52,7 +52,7 @@ require_once __DIR__ . '/includes/header.php';
                 <p class="eyebrow">Contacts</p>
                 <h2>Contact des coachs</h2>
             </div>
-            <a class="text-link" href="competitions.php#documents">Documents compétition →</a>
+            <a class="text-link" href="competitions#documents">Documents compétition →</a>
         </div>
 
         <div class="coach-grid">

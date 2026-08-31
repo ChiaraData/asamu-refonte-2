@@ -75,7 +75,7 @@ require_once __DIR__ . '/includes/header.php';
     <article class="legal-card">
         <p class="eyebrow">Données personnelles</p>
         <h2>Protection de la vie privée</h2>
-        <p>Les modalités de traitement des données personnelles, les durées de conservation et les droits des personnes sont détaillés dans la <a href="confidentialite.php">politique de confidentialité</a>.</p>
+        <p>Les modalités de traitement des données personnelles, les durées de conservation et les droits des personnes sont détaillés dans la <a href="confidentialite">politique de confidentialité</a>.</p>
     </article>
 
     <p class="legal-updated">Dernière mise à jour : 4 août 2026.</p>

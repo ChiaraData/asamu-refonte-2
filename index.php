@@ -13,10 +13,10 @@ require_once __DIR__ . '/includes/header.php';
             <h1>Association sportive Aix-Marseille Université</h1>
             <p class="lead">Trouve ta section, adhère avec HelloAsso, prépare ta licence FFSU et suis le calendrier des compétitions en quelques clics.</p>
             <div class="hero-actions">
-                <a class="btn btn-primary" href="adhesion.php">Adhérer via HelloAsso</a>
-                <a class="btn btn-secondary" href="sections.php">Trouver ma section</a>
-                <a class="btn btn-secondary" href="boussole.php">La boussole du sport à AMU</a>
-                <a class="btn btn-secondary" href="sections-appartenance.php">Je ne sais pas à quelle section j'appartiens</a>
+                <a class="btn btn-primary" href="adhesion">Adhérer via HelloAsso</a>
+                <a class="btn btn-secondary" href="sections">Trouver ma section</a>
+                <a class="btn btn-secondary" href="boussole">La boussole du sport à AMU</a>
+                <a class="btn btn-secondary" href="sections-appartenance">Je ne sais pas à quelle section j'appartiens</a>
             </div>
             <ul class="trust-list" aria-label="Chiffres clés">
                 <?php foreach (($site['home_stats'] ?? []) as $stat): ?>
@@ -70,25 +70,25 @@ require_once __DIR__ . '/includes/header.php';
             <span class="icon">1</span>
             <h3>Je choisis ma section</h3>
             <p>La section dépend de ta composante amU, pas seulement de ton sport.</p>
-            <a href="sections.php">Voir les sections</a>
+            <a href="sections">Voir les sections</a>
         </article>
         <article class="card action-card color-orange">
             <span class="icon">2</span>
             <h3>J’adhère</h3>
             <p>Le paiement de l’adhésion se fait directement sur HelloAsso.</p>
-            <a href="adhesion.php">Voir la procédure</a>
+            <a href="adhesion">Voir la procédure</a>
         </article>
         <article class="card action-card color-green">
             <span class="icon">3</span>
             <h3>Je demande ma licence</h3>
             <p>La licence FFSU reste nécessaire pour participer aux compétitions universitaires.</p>
-            <a href="adhesion.php#licence">Licence FFSU</a>
+            <a href="adhesion#licence">Licence FFSU</a>
         </article>
         <article class="card action-card color-purple">
             <span class="icon">4</span>
             <h3>Je consulte le calendrier</h3>
             <p>Les compétitions à venir sont centralisées dans un onglet dédié.</p>
-            <a href="calendrier.php">Voir le calendrier</a>
+            <a href="calendrier">Voir le calendrier</a>
         </article>
     </div>
 </section>
@@ -166,8 +166,8 @@ require_once __DIR__ . '/includes/header.php';
             <h3>Besoin d’aide rapidement ?</h3>
             <p>Commence par identifier ta section. Si tu as déjà payé ton adhésion HelloAsso, garde ton mail de confirmation à portée de main.</p>
             <div class="card-actions">
-                <a class="btn btn-secondary" href="association.php">Voir l’association</a>
-                <a class="btn btn-secondary" href="contact.php">Contacter l’AS amU</a>
+                <a class="btn btn-secondary" href="association">Voir l’association</a>
+                <a class="btn btn-secondary" href="contact">Contacter l’AS amU</a>
             </div>
         </div>
     </div>
@@ -179,7 +179,7 @@ require_once __DIR__ . '/includes/header.php';
             <p class="eyebrow">Les 12 sections</p>
             <h2>Découvrir les sections et les sports</h2>
         </div>
-        <a class="text-link" href="sections.php#section-list">Découvrir les sections et les sports →</a>
+        <a class="text-link" href="sections#section-list">Découvrir les sections et les sports →</a>
     </div>
     <div class="mini-section-grid">
         <?php foreach ($sections as $section): ?>

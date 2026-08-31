@@ -9,8 +9,8 @@ require_once __DIR__ . '/includes/header.php';
         <h1>Préparer son départ sans oublier d’étape.</h1>
         <p class="lead">Avant toute dépense, la participation et le budget doivent être validés par l’AS amU. Le calendrier est maintenant disponible dans un onglet dédié.</p>
         <div class="hero-actions">
-            <a class="btn btn-primary" href="calendrier.php">Voir le calendrier</a>
-            <a class="btn btn-secondary" href="coachs.php">Voir les coachs</a>
+            <a class="btn btn-primary" href="calendrier">Voir le calendrier</a>
+            <a class="btn btn-secondary" href="coachs">Voir les coachs</a>
         </div>
     </div>
 </section>
@@ -19,11 +19,11 @@ require_once __DIR__ . '/includes/header.php';
     <div class="cards two">
         <article class="card color-green-soft">
             <h2>Sport avec coach AS amU</h2>
-            <p>La sélection est faite par le coach. Il ou elle coordonne ensuite les démarches administratives, les engagements et la logistique.</p><a class="text-link" href="coachs.php">Voir les coachs →</a>
+            <p>La sélection est faite par le coach. Il ou elle coordonne ensuite les démarches administratives, les engagements et la logistique.</p><a class="text-link" href="coachs">Voir les coachs →</a>
         </article>
         <article class="card warning-card">
             <h2>Sport sans coach AS amU</h2>
-            <p>L’étudiant·e fait une demande via le formulaire compétition. La commission sport valide ensuite le départ avant toute dépense.</p><a class="text-link" href="coachs.php">Voir les sports sans coach →</a>
+            <p>L’étudiant·e fait une demande via le formulaire compétition. La commission sport valide ensuite le départ avant toute dépense.</p><a class="text-link" href="coachs">Voir les sports sans coach →</a>
         </article>
     </div>
 </section>

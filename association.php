@@ -28,8 +28,8 @@ foreach ($associationBoard['poles'] as $pole) {
         <h1>Organisation de l’association.</h1>
         <p class="lead">Une page claire pour comprendre qui fait quoi : association centrale, sections, bureau, commissions, documents et adhésion.</p>
         <div class="hero-actions">
-            <a class="btn btn-primary" href="adhesion.php">Comment adhérer ?</a>
-            <a class="btn btn-secondary" href="documents.php">Voir les documents</a>
+            <a class="btn btn-primary" href="adhesion">Comment adhérer ?</a>
+            <a class="btn btn-secondary" href="documents">Voir les documents</a>
         </div>
     </div>
 </section>
@@ -58,8 +58,8 @@ foreach ($associationBoard['poles'] as $pole) {
             <p>L’association centrale coordonne les grandes démarches : adhésion, documents, compétitions, communication, finances et accompagnement des sections.</p>
             <p>Les sections sont les points d’entrée étudiants. Chaque section dispose d’une fiche dédiée avec son adresse, son bureau, ses permanences, son mail et ses informations pratiques.</p>
             <div class="card-actions">
-                <a href="sections.php">Voir toutes les sections</a>
-                <a href="commissions.php">Voir les commissions</a>
+                <a href="sections">Voir toutes les sections</a>
+                <a href="commissions">Voir les commissions</a>
             </div>
         </article>
     </div>
@@ -67,12 +67,12 @@ foreach ($associationBoard['poles'] as $pole) {
     <aside class="association-sidebar card">
         <h2>Menu association</h2>
         <ul class="quick-menu">
-            <li><a href="association.php">Organisation <span>→</span></a></li>
+            <li><a href="association">Organisation <span>→</span></a></li>
             <li><a href="#bureau">Bureau AS amU <span>→</span></a></li>
-            <li><a href="statuts.php">Statuts & charte <span>→</span></a></li>
-            <li><a href="documents.php">Documents <span>→</span></a></li>
-            <li><a href="commissions.php">Commissions <span>→</span></a></li>
-            <li><a href="adhesion.php">Comment adhérer ? <span>→</span></a></li>
+            <li><a href="statuts">Statuts & charte <span>→</span></a></li>
+            <li><a href="documents">Documents <span>→</span></a></li>
+            <li><a href="commissions">Commissions <span>→</span></a></li>
+            <li><a href="adhesion">Comment adhérer ? <span>→</span></a></li>
         </ul>
     </aside>
 </section>

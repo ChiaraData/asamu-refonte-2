@@ -1,0 +1,49 @@
+Options -MultiViews
+
+RewriteEngine On
+
+# Laisse Let's Encrypt valider le domaine avant d'activer le certificat HTTPS.
+RewriteRule ^\.well-known/acme-challenge/ - [L]
+
+# Bloque l'accès direct aux fichiers internes qui ne doivent jamais être servis.
+RewriteRule ^(?:includes|storage|database|docs|google-sheets)(?:/|$) - [F,L,NC]
+
+# Force HTTPS en production, y compris derrière un reverse proxy.
+# localhost reste en HTTP afin de conserver les tests XAMPP fonctionnels.
+RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1|\[::1\])(?::[0-9]+)?$ [NC]
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !^https$ [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,NE]
+
+# Redirections permanentes depuis les principales URL de l'ancien site WordPress.
+RewriteRule ^les-sections/?$ sections [R=301,L,NE]
+RewriteRule ^les-sections/([^/]+)/?$ section?slug=$1 [R=301,L,NE,QSD]
+RewriteRule ^a-quelle-section-asamu-jappartiens/?$ sections-appartenance [R=301,L,NE]
+RewriteRule ^l-association/comment-adherer/?$ adhesion [R=301,L,NE]
+RewriteRule ^l-association/inscription-licence/?$ adhesion [R=301,L,NE]
+RewriteRule ^l-association/coach-2025-2026/?$ coachs [R=301,L,NE]
+RewriteRule ^l-association/?$ association [R=301,L,NE]
+RewriteRule ^competition-2/?$ competitions [R=301,L,NE]
+RewriteRule ^evenements/?$ actualites [R=301,L,NE]
+RewriteRule ^les-sports(?:/[^/]+)?/?$ sections#sports [R=301,L,NE]
+
+# Supprime le slash final des pages qui ne sont pas des dossiers réels.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ $1 [R=301,L,NE]
+
+# Retire .php des URL publiques demandées par un navigateur.
+# Les pages d'administration et l'endpoint Google Sheets conservent leurs URL
+# techniques afin de ne pas perturber les formulaires POST et les intégrations.
+RewriteCond %{THE_REQUEST} \s/+index\.php(?:[?\x20]) [NC]
+RewriteRule ^index\.php$ ./ [R=301,L,NE]
+
+RewriteCond %{THE_REQUEST} \s/+[^?\x20]*\.php(?:[?\x20]) [NC]
+RewriteCond %{REQUEST_URI} !/admin/ [NC]
+RewriteCond %{REQUEST_URI} !/google-sheets-sync\.php$ [NC]
+RewriteRule ^(.+)\.php$ $1 [R=301,L,NE]
+
+# Sert en interne le fichier PHP correspondant à une URL publique sans extension.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [L,QSA]

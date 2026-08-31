@@ -70,41 +70,41 @@ $site = [
 ];
 
 $nav = [
-    ['label' => 'Accueil', 'url' => 'index.php'],
+    ['label' => 'Accueil', 'url' => './'],
     [
         'label' => 'L’association',
-        'url' => 'association.php',
+        'url' => 'association',
         'children' => [
-            ['label' => 'Organisation de l’association', 'url' => 'association.php'],
-            ['label' => 'Statuts – règlement intérieur et charte', 'url' => 'statuts.php'],
-            ['label' => 'Documents', 'url' => 'documents.php'],
-            ['label' => 'Les commissions', 'url' => 'commissions.php'],
-            ['label' => 'Comment adhérer ?', 'url' => 'adhesion.php'],
+            ['label' => 'Organisation de l’association', 'url' => 'association'],
+            ['label' => 'Statuts – règlement intérieur et charte', 'url' => 'statuts'],
+            ['label' => 'Documents', 'url' => 'documents'],
+            ['label' => 'Les commissions', 'url' => 'commissions'],
+            ['label' => 'Comment adhérer ?', 'url' => 'adhesion'],
         ],
     ],
     [
         'label' => 'Les sections',
-        'url' => 'sections.php',
+        'url' => 'sections',
         'children' => [
-            ['label' => 'Toutes les sections', 'url' => 'sections.php'],
-            ['label' => "À quelle section j'appartiens", 'url' => 'sections-appartenance.php'],
-            ['label' => 'Carte des campus et sections', 'url' => 'campus.php'],
-            ['label' => 'Disciplines sportives', 'url' => 'sections.php#sports'],
+            ['label' => 'Toutes les sections', 'url' => 'sections'],
+            ['label' => "À quelle section j'appartiens", 'url' => 'sections-appartenance'],
+            ['label' => 'Carte des campus et sections', 'url' => 'campus'],
+            ['label' => 'Disciplines sportives', 'url' => 'sections#sports'],
         ],
     ],
     [
         'label' => 'Compétitions',
-        'url' => 'competitions.php',
+        'url' => 'competitions',
         'children' => [
-            ['label' => 'Préparer une compétition', 'url' => 'competitions.php'],
-            ['label' => 'Calendrier des compétitions', 'url' => 'calendrier.php'],
-            ['label' => 'Palmarès', 'url' => 'palmares.php'],
-            ['label' => 'Coachs ' . $site['season'], 'url' => 'coachs.php'],
-            ['label' => 'Documents compétition', 'url' => 'competitions.php#documents'],
+            ['label' => 'Préparer une compétition', 'url' => 'competitions'],
+            ['label' => 'Calendrier des compétitions', 'url' => 'calendrier'],
+            ['label' => 'Palmarès', 'url' => 'palmares'],
+            ['label' => 'Coachs ' . $site['season'], 'url' => 'coachs'],
+            ['label' => 'Documents compétition', 'url' => 'competitions#documents'],
         ],
     ],
-    ['label' => 'Photothèque', 'url' => 'phototheque.php'],
-    ['label' => 'Contact', 'url' => 'contact.php'],
+    ['label' => 'Photothèque', 'url' => 'phototheque'],
+    ['label' => 'Contact', 'url' => 'contact'],
 ];
 
 /**
@@ -1051,13 +1051,19 @@ function e(string $value): string
 
 function current_page(): string
 {
-    return basename($_SERVER['SCRIPT_NAME'] ?? 'index.php');
+    return clean_public_route(basename($_SERVER['SCRIPT_NAME'] ?? 'index.php'));
+}
+
+function clean_public_route(string $path): string
+{
+    $path = (string) preg_replace('/\.php$/i', '', $path);
+    return $path === 'index' ? '' : $path;
 }
 
 function nav_path(string $url): string
 {
     $path = parse_url($url, PHP_URL_PATH) ?: $url;
-    return basename($path);
+    return clean_public_route(basename($path));
 }
 
 function is_url_active(string $url): bool
@@ -1069,7 +1075,7 @@ function is_url_active(string $url): bool
         return true;
     }
 
-    if ($path === 'sections.php' && $current === 'section.php') {
+    if ($path === 'sections' && $current === 'section') {
         return true;
     }
 

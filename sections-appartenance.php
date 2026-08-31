@@ -430,7 +430,7 @@ $sectionMemberships = [
 
             <div class="hero-actions">
                 <a class="btn btn-primary" href="#trouver-section">Trouver ma section</a>
-                <a class="btn btn-secondary" href="adhesion.php">Voir l’adhésion</a>
+                <a class="btn btn-secondary" href="adhesion">Voir l’adhésion</a>
             </div>
         </div>
 
@@ -441,7 +441,7 @@ $sectionMemberships = [
                 Ton rattachement administratif ne t’empêche pas de participer à des entraînements
                 ou compétitions avec une autre section si c’est plus pratique pour toi.
             </p>
-            <a class="text-link" href="contact.php">Besoin d’aide&nbsp;? Contacte l’AS amU →</a>
+            <a class="text-link" href="contact">Besoin d’aide&nbsp;? Contacte l’AS amU →</a>
         </aside>
     </div>
 </section>
@@ -474,7 +474,7 @@ $sectionMemberships = [
             <p class="eyebrow">Recherche rapide</p>
             <h2>Trouve ta section</h2>
         </div>
-        <a class="text-link" href="contact.php">Je ne trouve pas ma formation →</a>
+        <a class="text-link" href="contact">Je ne trouve pas ma formation →</a>
     </div>
 
     <div class="finder-tools">
@@ -488,7 +488,7 @@ $sectionMemberships = [
             >
         </label>
 
-        <a class="btn btn-primary" href="adhesion.php">Adhérer</a>
+        <a class="btn btn-primary" href="adhesion">Adhérer</a>
     </div>
 
     <div class="membership-grid" id="membership-grid">
@@ -545,8 +545,8 @@ $sectionMemberships = [
                 Indique ton diplôme, ton campus et le sport que tu souhaites pratiquer.
             </p>
             <div class="card-actions">
-                <a class="btn btn-secondary" href="contact.php">Contacter l’AS amU</a>
-                <a class="btn btn-secondary" href="sections.php">Voir les sections</a>
+                <a class="btn btn-secondary" href="contact">Contacter l’AS amU</a>
+                <a class="btn btn-secondary" href="sections">Voir les sections</a>
             </div>
         </div>
     </div>
