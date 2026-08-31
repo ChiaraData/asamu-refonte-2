@@ -46,6 +46,7 @@ button:focus-visible {
     outline-offset: 3px;
 }
 img { max-width: 100%; display: block; }
+[hidden] { display: none !important; }
 code { background: rgba(0,0,0,.06); padding: .12rem .35rem; border-radius: .45rem; }
 .container { width: min(var(--container), calc(100% - 32px)); margin: 0 auto; }
 .sr-only, .skip-link:not(:focus) {

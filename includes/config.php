@@ -1104,7 +1104,7 @@ function active_class(string $file): string
 
 function section_url(array $section): string
 {
-    return 'section.php?slug=' . urlencode((string) $section['slug']);
+    return 'section?slug=' . urlencode((string) $section['slug']);
 }
 
 function find_section_by_slug(array $sections, string $slug): ?array

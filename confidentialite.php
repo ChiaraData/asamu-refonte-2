@@ -26,9 +26,10 @@ require_once __DIR__ . '/includes/header.php';
     </article>
 
     <article class="legal-card">
-        <p class="eyebrow">Formulaire de contact</p>
-        <h2>Répondre à vos demandes</h2>
-        <p>Lorsque vous utilisez le formulaire de contact, le site traite votre nom, votre adresse e-mail, le sujet choisi et le contenu de votre message.</p>
+        <p class="eyebrow">Contact par courrier électronique</p>
+        <h2>Aucun formulaire de contact sur le site</h2>
+        <p>Le site ne recueille aucune donnée au moyen d’un formulaire. Le bouton de contact ouvre uniquement votre application de messagerie afin que vous puissiez écrire directement à l’AS amU.</p>
+        <p>Lorsque vous envoyez un e-mail, l’association traite votre adresse électronique et les informations contenues dans votre message afin de vous répondre.</p>
         <dl class="legal-details">
             <div><dt>Finalité</dt><dd>Recevoir, orienter et répondre à votre demande.</dd></div>
             <div><dt>Base légale</dt><dd>Intérêt légitime de l’association à répondre aux sollicitations qui lui sont adressées.</dd></div>
@@ -36,7 +37,7 @@ require_once __DIR__ . '/includes/header.php';
             <div><dt>Destinataires</dt><dd>Personnes habilitées de l’AS amU et, selon le sujet, de la section sportive concernée.</dd></div>
             <div><dt>Durée</dt><dd>Durée nécessaire au traitement de la demande, puis au maximum 12 mois après le dernier échange, sauf obligation légale ou contentieux.</dd></div>
         </dl>
-        <p>Le formulaire ne conserve actuellement pas les messages dans une base de données du site. Lorsque l’envoi électronique est activé sur l’hébergement, le message est transmis à la boîte de contact de l’association.</p>
+        <p>Aucun message n’est enregistré dans une base de données du site. Les échanges sont conservés uniquement dans la messagerie de l’association pendant la durée indiquée ci-dessus.</p>
     </article>
 
     <article class="legal-card">
@@ -71,10 +72,10 @@ require_once __DIR__ . '/includes/header.php';
     <article class="legal-card">
         <p class="eyebrow">Sécurité et évolution</p>
         <h2>Protection des informations</h2>
-        <p>L’AS amU limite l’accès aux informations aux personnes qui en ont besoin et met en œuvre des mesures techniques et organisationnelles adaptées. Cette politique sera mise à jour si les formulaires, services externes, cookies ou finalités du site évoluent.</p>
+        <p>L’AS amU limite l’accès aux informations aux personnes qui en ont besoin et met en œuvre des mesures techniques et organisationnelles adaptées. Cette politique sera mise à jour si les services externes, cookies ou finalités du site évoluent.</p>
     </article>
 
-    <p class="legal-updated">Dernière mise à jour : 4 août 2026.</p>
+    <p class="legal-updated">Dernière mise à jour : 31 août 2026.</p>
 </section>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
