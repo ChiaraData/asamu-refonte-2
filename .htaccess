@@ -1,6 +1,15 @@
 Options -MultiViews
+Options -Indexes
+
+# Page d'erreur unique : les adresses qui n'existent plus reçoivent un vrai
+# statut HTTP 404, sans être redirigées vers l'accueil.
+ErrorDocument 404 /404.php
 
 RewriteEngine On
+
+# Nettoie les anciennes URL WordPress ayant accidentellement indexé le chemin
+# interne de l'hébergement (ex. /home/fdyf6405/public_html/adhesion).
+RewriteRule ^home/fdyf6405/public_html/?(.*)$ /$1 [R=301,L,NE]
 
 # Laisse Let's Encrypt valider le domaine avant d'activer le certificat HTTPS.
 RewriteRule ^\.well-known/acme-challenge/ - [L]
@@ -47,5 +56,3 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.+)$ $1.php [L,QSA]
-
-Options -Indexes
